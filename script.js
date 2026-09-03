@@ -26,7 +26,7 @@ function pointOnHeart(t) {
 
 // Crear partículas
 const particles = [];
-const particleCount = 600; // Más partículas para mayor densidad
+const particleCount = 1000; // Más partículas para mayor densidad
 
 // Escalar según la pantalla
 const scale = Math.min(width, height) < 500 ? 0.8 : 1.2;
@@ -69,7 +69,7 @@ function render() {
     // Dibujar partícula
     ctx.fillStyle = '#00bfff';
     ctx.shadowBlur = 12;
-    ctx.shadowColor = '#00bfff';
+    ctx.shadowColor = '#000000';
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
     ctx.fill();
